@@ -10,6 +10,13 @@
 
 #include "dp_table.h"
 
+struct matrix
+{
+	int rows_;
+	int columns_;
+	std::string name_;
+};
+
 class dp_algorithm
 {
 private:
@@ -21,5 +28,6 @@ public:
 	long diagonal_run();
 	long row_run();
 	long column_run();
+	std::string get_parentized_operation();
 };
 #endif /* DP_ALGORITHM_H_ */
