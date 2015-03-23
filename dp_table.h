@@ -27,6 +27,8 @@ public:
 	long get_element(int i, int j);
 	void set_element(int i, int j, long new_value);
 	std::string get_parentized_operation();
+	void print_table();
+	void reset();
 private:
 	int pos(int i, int j);
 };
